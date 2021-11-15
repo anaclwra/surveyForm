@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="titulo">
+        <h1>freeCodeCamp Survey Form</h1>
+        <p><i>Thank you for taking the time to help us improve the problem</i></p>
+    </div><!--TITULO-->
+
+    <div class="conteudo">
+        <div class="nome">
+            <label for="nome">Name</label>
+            <input type="text" id="nome" required>
+        </div><!--NOME-->
+
+        <div class="email">
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+        </div><!--EMAIL-->
+
+        <div class="idade">
+            <label for="idade">Age (optional)</label>
+            <input type="number" min="10" max="99" id="idade">
+        </div><!--IDADE-->
+
+        <div class="primeiro-option">
+            <label for="primeiro-option">Which option best describes your current role?</label>
+            <select name="primeiro-option" id="primeiro-option" required>
+                <option selected disabled value="">Select current hole</option>
+                <option>Student</option>
+                <option>Full Time Job</option>
+                <option>Full Time Learner</option>
+                <option>Prefer not to say</option>
+                <option>Other</option>
+            </select>
+        </div><!--PRIMEIRO OPTION-->
+
+        <div class="radio">
+            <label>Would you recommend freeCodeCamp to a friend?</label>
+            <label>
+                <input type="radio" name="recommend" value="definitely" checked> Definitely
+            </label>
+            <label>
+                <input type="radio" name="recommend" value="maybe"> Maybe
+            </label>
+            <label>
+                <input type="radio" name="recommend" id="not-sure"> Not sure
+        </div><!--RADIO-->
+
+        <div class="segundo-option">
+            <label for="segundo-option">What is your favorite feature of freeCodeCamp?</label>
+            <select name="segundo-option" id="primeiro-option">
+                <option selected disabled value="">Select an option</option>
+                <option value="">Challenges</option>
+                <option>Projects</option>
+                <option>Community</option>
+                <option>Open Source</option>
+            </select>
+         </div><!--SEGUNDO OPTION-->
+
+            <div class="checkbox">
+                <label>What would you like to see improved? (Check all that apply)</label>
+
+                <label>
+                    <input type="checkbox"> Front-End Projects
+                    
+                </label>
+
+                <label>
+                    <input type="checkbox"> Back-End Projects
+                    
+                </label>
+
+                <label>
+                    <input type="checkbox"> Data Visualization
+                  
+                </label>
+
+                <label>
+                    <input type="checkbox"> Challenges
+                   
+                </label>
+
+                <label>
+                    <input type="checkbox"> Open Source Community
+                   
+                </label>
+
+                <label>
+                    <input type="checkbox"> Gitter help rooms
+                </label>
+
+                <label>
+                    <input type="checkbox"> Videos                
+                </label>
+
+                <label>
+                    <input type="checkbox"> City Meetups
+                 </label>
+                 
+                 <label>
+                     <input type="checkbox"> Wiki
+         
+                 </label>
+ 
+                 <label>
+                     <input type="checkbox"> Forum
+                     
+                 </label>
+ 
+                 <label>
+                     <input type="checkbox"> Additional Courses
+                 </label>
+                
+            </div><!--CHECKBOX-->
+
+            <div class="area-texto">
+               <label for="area-texto">Any comments or suggestions?</label>
+               <textarea name="area-texto" cols="30" rows="6" placeholder="Enter you comment here..."></textarea>
+               
+            </div><!--AREA-TEXTO-->
+
+        <div class="botao">
+            <button type="submit">Submit</button>
+        </div><!--BOTAO-->
+    </div><!--CONTEUDO DA CAIXA-->
+</body>
+</html>
